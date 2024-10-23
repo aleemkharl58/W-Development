@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 200px;
+            margin-left: 250px;
+            /* background-color: aqua; */
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border-top: 15px green solid;
+            border-left: 15px yellow solid;
+            border-right: 15px red solid;
+            border-bottom: black 20px solid;
+            /* animation shortcut= animation: name duration timing function delay iteration style/direction; */
+            animation: spin 3s ease-in 0s infinite normal;
+            /* animation: color 2s ease-in 1s infinite normal; */
+        }
+         @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        /* @keyframes color{
+            50%{
+                background-color: yellow;
+            }
+        }
+        @keyframes color{
+            75%{
+                background-color: blue;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 70px;
+            width: 250px;
+            background-color: brown;
+            border: 20px black;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            text-align: center;
+            /* padding-left: 25px; */
+            /* to increase the size */
+            transform: rotate(45deg);
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 2s; */
+            /* this is short hand for transition */
+            /* transition: all 2s steps(3) 2s; */
+            /* transition: steps(5); */
+        }
+        div:hover{
+            background-color: blue;
+            color: white;
+            /* transition: 25px cubic-bezier(5); */
+            font-style: italic;
+            transition: steps(5);
+            transform: scale(2,2);
+            /* font-size: 25px;
+            transition-timing-function: cubic; */
+        }
+        div:active{
+            background-color: green;
+            color: cornsilk;
+            font-style: oblique;
+            transition-timing-function: steps;
+        }
+    </style>
+</head>
+<body>
+    <div><h3>I am Muhammad ALEEM</h3></div>
+</body>
+</html>
